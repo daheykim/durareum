@@ -1,0 +1,7 @@
+node_modules
+package.json
+package-lock.json
+prac.html
+jquery-3.6.1.min.js
+jquery.mousewheel.min.js
+jquery.scrollTo.min.js
