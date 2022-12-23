@@ -1150,7 +1150,7 @@ img {display: block;}
 }
 .float_banner_box .float_banner .float_banner_close {
   display: block;
-  background-image: url(./images/float\ banner_thumbnail.png);
+  background-image: url(./images/float_banner_thumbnail.png);
   width: 80px; height: 80px;
   position: absolute;
   bottom: 0;
@@ -1169,7 +1169,7 @@ img {display: block;}
 }
 
 .float_banner_box .float_banner .float_banner_close:hover {
-  background-image: url(./images/float\ banner01.jpg);
+  background-image: url(./images/float_banner01.jpg);
   width: 350px; height: 206px;
   animation-name: none;
 }
