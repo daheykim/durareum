@@ -6,3 +6,6 @@ jquery-3.6.1.min.js
 jquery.mousewheel.min.js
 jquery.scrollTo.min.js
 .cache
+movieData.js
+performanceData.js
+exhibitData.js

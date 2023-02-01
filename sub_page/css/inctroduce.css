@@ -387,6 +387,9 @@ img {display: block;}
   line-height: 35px;
   padding: 2px 0;
 }
+.year_move_tablet_pc .year_move_menu div a {
+  display: block;
+}
 .year_move_tablet_pc .year_move_menu div:first-child {
   border-radius: 0 10px 0 0;
 }
@@ -463,7 +466,7 @@ img {display: block;}
 
 .history_contents {
   overflow: hidden;
-  opacity: 0;
+
 }
 .history_img {
   display: none;
@@ -473,6 +476,8 @@ img {display: block;}
 }
 .history_contents .history_box {
   margin: 10% auto;
+  opacity: 0;
+  transition: all 1s;
 
   
 }
@@ -730,9 +735,14 @@ img {display: block;}
   .year_move {display: none;}
   .history .line {display: block;}
   .history_wrap .year_move_wrap {display: block;}
-  .history_contents {display: flex;}
-  .history_box {width: 49%;}
-  .history_right {padding-top: 80px;}
+  .history_box {
+    display:block;
+    width: 49%;}
+  .history_left {
+    float:left;}
+  .history_right {
+    float:right;
+    padding-top: 150px;}
 
   .history_img {
     display: block;

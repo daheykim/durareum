@@ -17,10 +17,10 @@ btnHammenu.addEventListener('click', () => {
 })
 
 /* ham_list_wrap 햄버거 서브메뉴 아코디언*/
-let coll = document.getElementsByClassName("collapsible");
+let coll = document.getElementsByClassName('collapsible');
 let i = 0;
 
-for (i=0; i<coll.length; i++) {
+for (let i=0; i<coll.length; i++) {
   coll[i].addEventListener('click', function(){
     let content = this.nextElementSibling;
     if(content.style.maxHeight) {
@@ -62,29 +62,19 @@ $(function(){
     .addTo(controller);
   }
 
+
 /* history */
 $(function() {
   $(window).scroll(function(){
-    let historyBox = $('.history_contents');
-    // historyBox.each(function(){
-        let bottoEl = historyBox.offset().top + historyBox.outerHeight();
-        let bottomWin = $(window).scrollTop();
-        console.log(bottoEl)
-        if( bottoEl > bottomWin ){
-          historyBox.animate({opacity:1},300);
-        }
-    });
-  });
-// }); 
+    let historyBox = document.querySelectorAll('.history_box')
 
+    for(let i=0; i<historyBox.length;i++) {
+      let historyIndex = $(historyBox).eq(i)
 
-/* $(function() {
-  $(window).scroll(function(){
-    let historyBox = $('.history_contents');
-
-    if ($(this).scrollTop() == historyBox.offset().top) {
-      historyBox.animate({opacity : 1}, 800);
+      if($(window).scrollTop() + 700 >= historyIndex.offset().top + (historyIndex.outerHeight(true)- historyIndex.height())) {
+        historyBox[i].style.opacity = '1'
+      }
     }
-
   })
-}) */
+})
+

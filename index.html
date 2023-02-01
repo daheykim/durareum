@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>Document</title>
+  <title>영화의 전당</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   
-  <script src="./js/main.js" defer></script>
+  <script src="./js/main.js" type="module" defer ></script>
 
   <!-- kakao map API -->
   <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a6fe37f4608f3810ea1d5affe0211892"></script>
@@ -44,7 +44,6 @@
         <li><input type="text" /></li>
       </ul> <!-- pc_gnb -->
     </div> <!-- header_top -->
-
 
     <div class="lnb_box">
       <ul class="lnb">
@@ -1176,37 +1175,36 @@
       </div> <!-- calendar_main -->
     </div> <!-- calendar -->
 
-    <div class="cinema_list cinema_tech">
+    <ul class="cinema_list cinema_tech">
       <div class="cinema_list_header">
         시네마테크
       </div>
-
-    </div>
-    <div class="cinema_list little_theater">
+    </ul>
+    <ul class="cinema_list little_theater">
       <div class="cinema_list_header">
         소극장
       </div>
-    </div>
-    <div class="cinema_list indi_plus">
+    </ul>
+    <ul class="cinema_list indi_plus">
       <div class="cinema_list_header">
         인디+
       </div>
-    </div>
-    <div class="cinema_list midium_theater">
+    </ul>
+    <ul class="cinema_list midium_theater">
       <div class="cinema_list_header">
         중극장
       </div>
-    </div>
-    <div class="cinema_list sky_theater">
+    </ul>
+    <ul class="cinema_list sky_theater">
       <div class="cinema_list_header">
         하늘연극장
       </div>
-    </div>
-    <div class="cinema_list outdoor_theater">
+    </ul>
+    <ul class="cinema_list outdoor_theater">
       <div class="cinema_list_header">
         야외극장
       </div>
-    </div>
+    </ul>
 
   </section><!-- schedule -->
 
@@ -1234,9 +1232,9 @@
       <a href="#!" class="btn_prev"><</a>
       <a href="#!" class="btn_next">></a>
     </div>
-    <input type="radio" id="rad_recommend_movie" name="rad_recommend" checked/>
-    <input type="radio" id="rad_recommend_performance" name="rad_recommend"/>
-    <input type="radio" id="rad_recommend_exhibit" name="rad_recommend"/>
+    <input type="radio" id="rad_recommend_movie" name="rad_recommend" class="input_reco" checked/>
+    <input type="radio" id="rad_recommend_performance" name="rad_recommend" class="input_reco"/>
+    <input type="radio" id="rad_recommend_exhibit" name="rad_recommend" class="input_reco"/>
 
     <div class="recommend_labels">
       <label for="rad_recommend_movie" class="lab_movie">영화</label>
@@ -1482,61 +1480,60 @@
       <a href="#!" class="btn_left"><</a>
       <a href="#!" class="btn_right">></a>
     </div>
-      <div class="critic_main">
-        <div class="critic_box">
-          <div class="critic_img">
-            <img src="./images/critic01.jpg" alt="영화 「탑」 비평" />
-          </div>
-          <div class="critic_info">
-            <div class="critic_main_title"> 영화 <탑></div>
-            <div class="critic_sub_title">시간의 안과 밖</div>
-            <div class="critic_txt">
-              <p>영화감독 병수(권해효)는 5년 만에 만난 딸 정수(박미소)와 함께 인테리어 디자이너 해옥(이혜영)을 만나러 간다. 미술 공부를 그만두고 인테리어 디자이너가 되려는 딸 정수를 해옥에게 소개해주기 위해서다. 해옥은 두 사람에게 자신의 4층 건물을 한 층씩 올라가며 소개한다.<br />
-              기타 선율이 흐르고 건물 입구를 비추는 화면 밖에서 병수가 해옥의 건물 입구로 걸어온다. 기타 선율은 영화에서 몇 번 더 반복되는데 그때마다 병수가 거처하는 장소, 맺고 있는 관계, 건강 상태의 변화가 동반되어 기타 선율이 시간의 흐름을 암시하는 것처럼 기능한다. 변하지 않는 것도 있다. 병수는 분화된 시간 속에서 비록 점점 그 위상이 흔들릴지언정 언제나 영화감독이다. 정수의 말에 의하면 병수는 걱정과 두려움이 많은 사람이고 선희(송선미)와의 대화에서 병수 스스로가 자신은 겁이 많은 사람이라고 말하기도 한다. 하나님을 보았다며 덕분에 더는 아무것도 두렵지 않다는 병수의 말은 역설적으로 그의 불안을 드러낸다. 일련의 변화들에도 영화감독과 불안이라는 두 가지 중추는 사라지지 않고 남아 그를 구성한다.</p>
+    <div class="critic_outer">
+        <div class="critic_main">
+          <div class="critic_box">
+            <div class="critic_img">
+              <img src="./images/critic01.jpg" alt="영화 「탑」 비평" />
             </div>
-          </div> 
-        </div> <!-- critic_box -->
-        <div class="critic_box">
-          <div class="critic_img">
-            <img src="./images/critic02.jpg" alt="영화 「같은 속옷을 입는 두 여자」 비평" />
-          </div>
-          <div class="critic_info">
-            <div class="critic_main_title"> 영화 <같은 속옷을 입는 두 여자></div>
-            <div class="critic_sub_title">언제나 평행선을 달리는</div>
-            <div class="critic_txt">
-              <p>모성애라곤 없는 엄마, 화나면 딸을 화가 풀릴 때까지 때리고 미안하다는 말을 절대 하지 않는 엄마, <같은 속옷을 입는 두 여자>의 수경(양말복)은 그런 엄마다. 수경은 마트에서 홀로 화가 났는데, 그녀의 딸인 이정(임지호)이 씩씩거린다는 이유로 차 안에서 이정을 마구 때린다. 그리고 이정이 자리를 피해 밖으로 나가자 그대로 이정을 들이받는다. 수경은 급발진이라고 주장하지만, 이정도, 두 여자를 바라보는 우리도 수경의 의도가 없지 않았으리라 생각하게 된다. 수경이 정말로 죽었으면 좋겠다는 생각으로 이정을 들이받았든, 참을 수 없는 분노 때문에 그랬든 말이다.</p>
+            <div class="critic_info">
+              <div class="critic_main_title"> 영화 <탑></div>
+              <div class="critic_sub_title">시간의 안과 밖</div>
+              <div class="critic_txt">
+                <p>영화감독 병수(권해효)는 5년 만에 만난 딸 정수(박미소)와 함께 인테리어 디자이너 해옥(이혜영)을 만나러 간다. 미술 공부를 그만두고 인테리어 디자이너가 되려는 딸 정수를 해옥에게 소개해주기 위해서다. 해옥은 두 사람에게 자신의 4층 건물을 한 층씩 올라가며 소개한다.<br />
+                기타 선율이 흐르고 건물 입구를 비추는 화면 밖에서 병수가 해옥의 건물 입구로 걸어온다. 기타 선율은 영화에서 몇 번 더 반복되는데 그때마다 병수가 거처하는 장소, 맺고 있는 관계, 건강 상태의 변화가 동반되어 기타 선율이 시간의 흐름을 암시하는 것처럼 기능한다. 변하지 않는 것도 있다. 병수는 분화된 시간 속에서 비록 점점 그 위상이 흔들릴지언정 언제나 영화감독이다. 정수의 말에 의하면 병수는 걱정과 두려움이 많은 사람이고 선희(송선미)와의 대화에서 병수 스스로가 자신은 겁이 많은 사람이라고 말하기도 한다. 하나님을 보았다며 덕분에 더는 아무것도 두렵지 않다는 병수의 말은 역설적으로 그의 불안을 드러낸다. 일련의 변화들에도 영화감독과 불안이라는 두 가지 중추는 사라지지 않고 남아 그를 구성한다.</p>
+              </div>
+            </div> 
+          </div> <!-- critic_box -->
+          <div class="critic_box">
+            <div class="critic_img">
+              <img src="./images/critic02.jpg" alt="영화 「같은 속옷을 입는 두 여자」 비평" />
             </div>
-          </div> 
-        </div> <!-- critic_box -->
-      </div> <!-- critic_main -->
-
-      <div class="critic_tablet">
-        <div class="critic_box">
-          <div class="critic_img">
-            <img src="./images/critic03.jpg" alt="영화「자백」비평" />
-          </div>
-          <div class="critic_info">
-            <div class="critic_main_title"> 영화 <자백></div>
-            <div class="critic_sub_title">회상과 상상이 뒤섞인 긴장감 그리고 서늘함</div>
-            <div class="critic_txt">
-              <p>지난 10월 26일 개봉한 영화 <자백>(윤종석)에는 경찰이나 검찰이 용의자에게 요구하는 자백은 나오지 않는다. 대신 승률 100%인 변호사 양신애(김윤진)가 무죄를 주장하는 의뢰인 유민호(소지섭)에게 요구하는 자백만 나올 뿐이다.<br />
-                수많은 범죄 영화나 드라마를 보아온 관객이라면 영화를 보며, 익숙한 상황들을 목격하게 되고, 일종의 추리 게임에 돌입하게 된다. 그리고 점점 추가되는 몇 가지 영화적 장치에 의해 추리 게임의 난이도는 높아진다. 이 영화의 긴장감과 재미를 강화한 영화적 장치에 관해 이야기하고 싶다.</p>
+            <div class="critic_info">
+              <div class="critic_main_title"> 영화 <같은 속옷을 입는 두 여자></div>
+              <div class="critic_sub_title">언제나 평행선을 달리는</div>
+              <div class="critic_txt">
+                <p>모성애라곤 없는 엄마, 화나면 딸을 화가 풀릴 때까지 때리고 미안하다는 말을 절대 하지 않는 엄마, <같은 속옷을 입는 두 여자>의 수경(양말복)은 그런 엄마다. 수경은 마트에서 홀로 화가 났는데, 그녀의 딸인 이정(임지호)이 씩씩거린다는 이유로 차 안에서 이정을 마구 때린다. 그리고 이정이 자리를 피해 밖으로 나가자 그대로 이정을 들이받는다. 수경은 급발진이라고 주장하지만, 이정도, 두 여자를 바라보는 우리도 수경의 의도가 없지 않았으리라 생각하게 된다. 수경이 정말로 죽었으면 좋겠다는 생각으로 이정을 들이받았든, 참을 수 없는 분노 때문에 그랬든 말이다.</p>
+              </div>
+            </div> 
+          </div> <!-- critic_box -->
+          <div class="critic_box">
+            <div class="critic_img">
+              <img src="./images/critic03.jpg" alt="영화「자백」비평" />
             </div>
-          </div> 
-        </div> <!-- critic_box -->
-        <div class="critic_box">
-          <div class="critic_img">
-            <img src="./images/critic04.jpg" alt="영화 「2차 송환」 비평" />
-          </div>
-          <div class="critic_info">
-            <div class="critic_main_title">영화 <2차 송환></div>
-            <div class="critic_sub_title">살아있는 현재</div>
-            <div class="critic_txt">
-              <p>영화 <2차 송환>은 다음과 같은 문장으로 시작된다. ‘한국전쟁은 아직 끝나지 않았다. 현재까지 남과 북은 공작원들을 상호 침투시키고 있으며 북으로 돌아가지 못한 남파 공작원은 6446명(1953-1972), 남으로 돌아오지 못한 북파 공작원은 7726명(1953-1999)으로 집계되고 있다.’ 대한민국이 휴전 상태에 있는 국가라는 것은 전혀 새로울 일이 아니지만, 한국전쟁이 아직 끝나지 않았다는 이 문구는 우리에게 충격을 준다. 그렇다. 한국전쟁은 아직 끝나지 않았다. 2018년 문재인 대통령이 김정은 국무위원장과 판문점 선언을 하고, 트럼프 대통령과 김정은 국무위원장의 정상회담 역시 성사되면서 종전선언에 대한 기대가 있었지만, 2022년 현재까지 종전선언은 이루어지지 않았다.<br />‘사실상의’ 종전선언 또는 ‘적대관계의 종식’이 있었을 뿐이다. 그 사이 미국의 대통령이 바뀌었고, 대한민국의 대통령도 바뀌었다. 한국전쟁은 아직 끝나지 않았다. 그리고 앞으로도 요원한 일이다.</p>
+            <div class="critic_info">
+              <div class="critic_main_title"> 영화 <자백></div>
+              <div class="critic_sub_title">회상과 상상이 뒤섞인 긴장감 그리고 서늘함</div>
+              <div class="critic_txt">
+                <p>지난 10월 26일 개봉한 영화 <자백>(윤종석)에는 경찰이나 검찰이 용의자에게 요구하는 자백은 나오지 않는다. 대신 승률 100%인 변호사 양신애(김윤진)가 무죄를 주장하는 의뢰인 유민호(소지섭)에게 요구하는 자백만 나올 뿐이다.<br />
+                  수많은 범죄 영화나 드라마를 보아온 관객이라면 영화를 보며, 익숙한 상황들을 목격하게 되고, 일종의 추리 게임에 돌입하게 된다. 그리고 점점 추가되는 몇 가지 영화적 장치에 의해 추리 게임의 난이도는 높아진다. 이 영화의 긴장감과 재미를 강화한 영화적 장치에 관해 이야기하고 싶다.</p>
+              </div>
+            </div> 
+          </div> <!-- critic_box -->
+          <div class="critic_box">
+            <div class="critic_img">
+              <img src="./images/critic04.jpg" alt="영화 「2차 송환」 비평" />
             </div>
-          </div> 
-        </div> <!-- critic_box -->
-      </div> <!-- critic_tablet -->
+            <div class="critic_info">
+              <div class="critic_main_title">영화 <2차 송환></div>
+              <div class="critic_sub_title">살아있는 현재</div>
+              <div class="critic_txt">
+                <p>영화 <2차 송환>은 다음과 같은 문장으로 시작된다. ‘한국전쟁은 아직 끝나지 않았다. 현재까지 남과 북은 공작원들을 상호 침투시키고 있으며 북으로 돌아가지 못한 남파 공작원은 6446명(1953-1972), 남으로 돌아오지 못한 북파 공작원은 7726명(1953-1999)으로 집계되고 있다.’ 대한민국이 휴전 상태에 있는 국가라는 것은 전혀 새로울 일이 아니지만, 한국전쟁이 아직 끝나지 않았다는 이 문구는 우리에게 충격을 준다. 그렇다. 한국전쟁은 아직 끝나지 않았다. 2018년 문재인 대통령이 김정은 국무위원장과 판문점 선언을 하고, 트럼프 대통령과 김정은 국무위원장의 정상회담 역시 성사되면서 종전선언에 대한 기대가 있었지만, 2022년 현재까지 종전선언은 이루어지지 않았다.<br />‘사실상의’ 종전선언 또는 ‘적대관계의 종식’이 있었을 뿐이다. 그 사이 미국의 대통령이 바뀌었고, 대한민국의 대통령도 바뀌었다. 한국전쟁은 아직 끝나지 않았다. 그리고 앞으로도 요원한 일이다.</p>
+              </div>
+            </div> 
+          </div> <!-- critic_box -->
+        </div> <!-- critic_main -->
+      </div>
       <a href="#!" class="btn_critic">더보기</a>
   </section> <!-- critic -->
 
@@ -1846,11 +1843,96 @@
   </footer> <!-- footer -->
 
   <div class="quick">
-    <a href="#!" class="quick_reserve">빠른<br />
-      예매</a>
+    <a href="#!" class="quick_reserve">빠른<br />예매</a>
     <a href="#header" class="btn_arrow"><i class="fa-solid fa-arrow-up"></i></a>
     <a href="#footer" class="btn_arrow"><i class="fa-solid fa-arrow-down"></i></a>
   </div> <!-- quick -->
+
+  <div class="quick_reserve_modal">
+    <ul class ="quick_reserve_box">
+      <input type="radio" id="rad_movie" name="rad_program" checked></input>
+      <input type="radio" id="rad_perform" name="rad_program"></input>
+      <input type="radio" id="rad_exhibit" name="rad_program"></input>
+
+  
+      <li class="modal_program_type">
+        <label for="rad_movie" class="label_movie">영화</label>
+        <label for="rad_perform" class="label_perform">공연</label>
+        <label for="rad_exhibit" class="label_exhibit">전시·행사</label>
+      </li>
+
+      <li class="modal_date">
+        <div class="modal_date_title">
+          <div class="date_btn date_prev"><</div>
+          <div class="modal_title reserve_YYMM"></div>
+          <div class="date_btn date_next">></div>
+        </div>
+        <div class="reserve_DD">
+          <div class="reserve_date_slide"></div>
+        </div>
+      </li>
+      <li class="modal_program">
+        <div class="modal_title">프로그램 리스트</div>
+        <div class="modal_movie"></div>
+        <div class="modal_performance"></div>
+        <div class="modal_exhibit"></div>
+
+      </li>
+      <li class="modal_sheets">
+        <div class="screen">SCREEN</div>
+        <div class="sheet_choice">
+          <div class="row">
+            <span class="seat">A1</span>
+            <span class="seat">A2</span>
+            <span class="seat">A3</span>
+            <span class="seat">A4</span>
+            <span class="seat">A5</span>
+          </div>
+          <div class="row">
+            <span class="seat">B1</span>
+            <span class="seat">B2</span>
+            <span class="seat">B3</span>
+            <span class="seat">B4</span>
+            <span class="seat">B5</span>
+          </div>
+          <div class="row">
+            <span class="seat">C1</span>
+            <span class="seat">C2</span>
+            <span class="seat">C3</span>
+            <span class="seat">C4</span>
+            <span class="seat">C5</span>
+          </div>
+          <div class="row">
+            <span class="seat">D1</span>
+            <span class="seat">D2</span>
+            <span class="seat">D3</span>
+            <span class="seat">D4</span>
+            <span class="seat">D5</span>
+          </div>
+          <div class="row">
+            <span class="seat">E1</span>
+            <span class="seat">E2</span>
+            <span class="seat">E3</span>
+            <span class="seat">E4</span>
+            <span class="seat">E5</span>
+          </div>
+          
+        </div>
+      </li>
+      <li class="modal_total">
+        <div class="total_info">
+          <p class="modal_title_name">프로그램 명</p>
+          <p class="modal_total_count"><span>예매인원  : 0인</span></p>
+          <p class="modal_total_price"><span>예매금액 : 0원</span></p>
+        </div>
+        <div class="total_btn">
+          <button type="submit" class="modal_submit">예매하기</button>
+          <button type="button" class="modal_close">닫기</button>
+        </div>
+      </li>
+      
+    </ul> <!-- quick_reserve_box -->
+  </div> <!-- quick_reserve_modal -->
 
   <div class="float_banner_box">
     <div class="float_banner">
