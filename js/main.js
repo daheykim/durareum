@@ -361,6 +361,7 @@ for (let i=0; i<dateSelectArray.length; i++) {
         exhibitListCount = false
     }
 
+    //영화 프로그램
     for(let j=0; j<movieData.length; j++) {
       if(movieData[j].date <= dateSelectArray[i].innerText) {
         let movieListBox = document.createElement('div')
@@ -401,8 +402,9 @@ for (let i=0; i<dateSelectArray.length; i++) {
           e.currentTarget.style.fontWeight = 'bold'
         })
       }
-    } //영화
+    }
 
+    //공연 프로그램
     for(let j=0; j<performanceData.length; j++) {
       if(performanceData[j].date <= dateSelectArray[i].innerText) {
 
@@ -442,8 +444,9 @@ for (let i=0; i<dateSelectArray.length; i++) {
           e.currentTarget.style.fontWeight = 'bold'
         })
       }
-    } //공연
+    }
 
+    //전시 프로그램
     for(let j=0; j<exhibitData.length; j++) {
       if(exhibitData[j].date <= dateSelectArray[i].innerText) {
 
@@ -486,13 +489,15 @@ for (let i=0; i<dateSelectArray.length; i++) {
       }
     }
   })
-} //전시행사
+}
 
 
+/* 좌석 선택 */
 let seatArray = document.querySelectorAll('.seat')
 let seatCount = 0
 let seatColorChange = 'seat_color_change'
 
+//예매 인원, 예매 금액
 for (let i=0; i<seatArray.length; i++){
   seatArray[i].addEventListener('click', function(){
     /* seatArray[i].classList.toggle('seat_color') */
@@ -518,13 +523,13 @@ for (let i=0; i<seatArray.length; i++){
   });
 }
 
+/* quick_modal open & close */
 let quickReserveBtn = document.querySelector('.quick_reserve')
 let quickModal = document.querySelector('.quick_reserve_modal')
 
 quickReserveBtn.addEventListener('click', function(){
   quickModal.classList.add('show_modal')
 })
-
 document.querySelector('.modal_submit').addEventListener('click', function(){
   quickModal.classList.remove('show_modal')
 })
