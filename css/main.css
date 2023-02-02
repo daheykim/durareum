@@ -538,6 +538,14 @@ img {display: block;}
   color: #fff;
   box-sizing: border-box;
 }
+.schedule .cinema_list .weekly_movie_title {
+  font-size: 13px;
+}
+.schedule .cinema_list li .grade{
+  width: 15px; height: 15px;
+  float: left;
+  margin: 5px 10px 0 5px;
+}
 
 /* ---------- trailer ---------- */
 .trailer {
@@ -1199,8 +1207,8 @@ img {display: block;}
 
 .quick_reserve_box {
   width: 90vw; height: 90vh;
-  max-width: 500px;
-  max-height: 700px;
+  max-width: 450px;
+  max-height: 650px;
   background-color: #fff;
   margin: 5% auto;
   font-size: 12px;
@@ -1225,7 +1233,10 @@ img {display: block;}
 .quick_reserve_box .modal_title {
   font-weight: bold;
   font-size: 13px;
-  margin: 3px 0;
+  padding: 7px 0;
+  box-sizing: border-box;
+  text-align: center;
+
 }
 .quick_reserve_box .modal_title_box .modal_title {
   font-weight: bold;
@@ -1277,30 +1288,21 @@ img {display: block;}
 .quick_reserve_box .modal_date .modal_date_title{
   width: 100%;
   overflow: hidden;
-  margin-bottom: 5px;
 }
-.quick_reserve_box .modal_date .reserve_YYMM{
-  float: left;
-  width: 60%;
-}
-.quick_reserve_box .modal_date .date_btn{
-  width: 20%;
-  margin-top: 5px;
-}
-.quick_reserve_box .modal_date .date_prev{
-  float: left;
-}
-.quick_reserve_box .modal_date .date_next{
-  float: right;
-}
-
 .quick_reserve_box .modal_date .reserve_DD {
   overflow-y: hidden;
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
 }
 .quick_reserve_box .modal_date .reserve_DD::-webkit-scrollbar {
-  display: none;
+  height: 7px;
+}
+
+.reserve_DD::-webkit-scrollbar-thumb {
+    background: #2e3192;
+    border-radius: 10px;
+}
+
+.reserve_DD::-webkit-scrollbar-track {
+    background: #ccc; 
 }
 .quick_reserve_box .modal_date .reserve_date_slide span {
   margin-right: 10px;
@@ -1373,6 +1375,7 @@ img {display: block;}
 }
 .quick_reserve_box .modal_total .total_info .modal_title_name{
   font-weight: bold;
+  margin: 5px 0;
 }
 .quick_reserve_box .modal_total .total_btn{
   height: 40%;
@@ -1431,7 +1434,7 @@ img {display: block;}
   width: 0px; height: 0px;
   background-color: #fff;
   position: absolute;
-  top: 200px; left: 10%;
+  top: 250px; left: 10%;
   z-index: 99999;
   border: 1px solid #ccc;
 }
@@ -1711,4 +1714,45 @@ img {display: block;}
 }
 
 
-/* ---------- ham_menu ---------- */
+
+/* ---------- info_banner ---------- */
+.info_banner {
+  width: 300px; height: 200px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99999;
+  top: 250px; left: 400px;
+  border: 1px solid #999;
+}
+.info_banner .banner_title {
+  width: 300px; height:40px; 
+  background-color: #2e3192;
+  color: #fff;
+  line-height: 40px;
+}
+.info_banner .banner_title span {
+  margin-left: 15px;
+  font-weight: bold;
+}
+.info_banner .banner_title button {
+  border: none;
+  background-color: transparent;
+  float: right;
+  margin: 7px 20px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+.info_banner .banner_title {
+  width: 300px; height:40px; 
+  color: #fff;
+  line-height: 40px;
+  font-weight: bold;
+}
+.info_banner p{
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}

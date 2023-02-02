@@ -2,11 +2,11 @@
 const btnHammenu = document.querySelector('.btn_hammenu');
 const hamMenu = document.querySelector('.ham_menu');
 
-btnHammenu.addEventListener('click', (rotate) => {
+btnHammenu.addEventListener('click', function(rotate){
   rotate.currentTarget.classList.toggle('active');
 });
 
-btnHammenu.addEventListener('click', () => {
+btnHammenu.addEventListener('click', function() {
   if(hamMenu.classList.contains('menu_left')) {
     hamMenu.classList.remove('menu_left');
   } else {
@@ -135,8 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     date.setMonth(date.getMonth() - 1);
     renderCalendar();
   })
-
-  
 
   nextMonth.addEventListener('click', function(){
     date.setDate(1);
@@ -534,11 +532,7 @@ document.querySelector('.modal_close').addEventListener('click', function(){
   quickModal.classList.remove('show_modal')
 })
 
-
-
 //
-
-
 
 /* //공연 리스트
  for (let i=0; i<performanceData.length; i++) {
@@ -562,5 +556,11 @@ for (let i=0; i<exhibitData.length; i++) {
   exhibitList.appendChild(exhibitListTitleText)
 }
  */
+
+
+/* info_banner 닫기*/
+document.querySelector('.info_banner_close').addEventListener('click', function(){
+  document.querySelector('.info_banner').style.display = 'none'
+})
 
 
